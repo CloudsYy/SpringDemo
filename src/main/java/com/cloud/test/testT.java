@@ -19,7 +19,7 @@ public class testT<T> {//泛型类，除此之外有泛型方法和泛型接口�
     }
 
     public static void main(String[] args) {
-        testT t = new testT("456789");
+        testT t = new testT("1234567");
         testT t1 = new testT(123456);
         testT t2 = new testT(45.45);
         testT t3 = new testT(false);

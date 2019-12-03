@@ -13,7 +13,7 @@ public class StringtoVariable {
     public static void main(String[] args) {
         StringtoVariable stringtoVariable = new StringtoVariable();
         stringtoVariable.testString("123");
-        String str[] = {"123","nihao","get","post"};
+        String str[] = {"123","nihao","get","post","put"};
         stringtoVariable.testString(str);
         stringtoVariable.testString(new String());
         stringtoVariable.testString("*123*","","'123456'");
