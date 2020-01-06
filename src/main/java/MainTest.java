@@ -13,7 +13,7 @@ public class MainTest {
         Person bean = (Person) applicationContext.getBean("Person");
         System.out.println(bean);*/
         //获取配置类文件 ioc容器
-        //AnnotationConfigApplicationContext() 这里加的哪个配置类
+        //AnnotationConfigApplicationContext() 这里加的哪个配置类（注解）
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
         /* 获取bean类，
         Person bean = (Person) applicationContext.getBean(Person.class);
@@ -35,7 +35,7 @@ public class MainTest {
         -Dos.name=linux
         */
         /*Environment environment = applicationContext.getEnvironment();
-        String sysName = environment.getProperty("os.name");
+        String sysName = environment.getProperty("os.name");//获取当前使用的是什么系统
         String[] beanNamesForType = applicationContext.getBeanNamesForType(Person.class);
         for (String s : beanNamesForType) {
             System.out.println("s = " + s);
