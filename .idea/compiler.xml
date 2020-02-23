@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="test" />
-        <module name="Springdemo" />
         <module name="spring annotation" />
+        <module name="Springdemo" />
         <module name="SpringDemo" />
+        <module name="test" />
       </profile>
     </annotationProcessing>
   </component>

@@ -15,6 +15,7 @@ public class Logaspects {
     //1.本类的引用
     //2.其他切面的引用
     //所有方法，两个参数
+    //有一点需要注意的，JoinPoint需要在方法的最前面
     @Pointcut("execution(public int com.cloud.aop.object.MathCal.*(..))")
     public void pointCut(){}
 
