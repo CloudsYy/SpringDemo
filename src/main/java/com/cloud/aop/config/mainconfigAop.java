@@ -89,7 +89,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 *
 *             AnnotationAwareAspectJAutoProxyCreator[InstantiationAwareBeanBeanPostProcessor]的作用：
 *             1、每一个bean创建之前，调用postProcessorBeforeInstantiation();
-*               关心MathCald和LogAspect的创建
+*               关心MathCal和LogAspect的创建
 *               1、判断但概念bean是否在advisedBean中(保存了所有需要增强的bean)
 *               2、判断当前bean是否是基础类型的Advice，Pointcut、Advisor、AopInfrastructureBean,etc
 *                  或者是否是切面也就是有@Aspect的注解
@@ -148,8 +148,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 *                       3.组件创建完之后，判断组件是否增强，
 *                           是:切面通知方法，包装成增强器(Advisor)；给业务逻辑组件创建一个代理对象(cglib)
 *                5.执行目标方法：
-*                   1.代理对象执行目标方法
-*                   2.CglibAopProxy.intercept();
+ *                   1.代理对象执行目标方法
+ *                   2.CglibAopProxy.intercept();
 *                       1.得到目标方法的拦截器链（增强器包装成拦截器MethodIntercept）
 *                       2.利用拦截器的链式机制，依次进入每一个拦截器进行执行；
 *                       3.效果：
