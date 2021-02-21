@@ -84,7 +84,6 @@ import org.springframework.context.annotation.Configuration;
  *                      然后调用finishRefresh()方法，表示容器创建完成了，
  *                      this.publishEvent((ApplicationEvent)(new ContextRefreshedEvent(this)));
  *                      发布ContextRefreshedEvent容器刷新完成了的事件
- *
  * */
 @ComponentScan("com.cloud.ext")
 @Configuration
