@@ -21,7 +21,6 @@ logs
 *.iws
 *.iml
 *.ipr
-src/main/resources/rebel.xml
 
 ### NetBeans ###
 /nbproject/private/
